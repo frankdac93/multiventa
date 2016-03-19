@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codeProduct: 
+  codeProvider: 
+  description: MyString
+  details: MyString
+  category: 
+  subcategory: 
+  image: MyString
+  price1: 9.99
+  price2: 9.99
+  price3: 9.99
+  cost: 9.99
+  isActive: false
+  isExcent: false
+  isInventary: false
+  inventary: 
+  unitSize: MyString
+  expiredDate: 
+
+two:
+  codeProduct: 
+  codeProvider: 
+  description: MyString
+  details: MyString
+  category: 
+  subcategory: 
+  image: MyString
+  price1: 9.99
+  price2: 9.99
+  price3: 9.99
+  cost: 9.99
+  isActive: false
+  isExcent: false
+  isInventary: false
+  inventary: 
+  unitSize: MyString
+  expiredDate: 

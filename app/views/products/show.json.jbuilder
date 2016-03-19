@@ -1,0 +1,1 @@
+json.extract! @product, :id, :codeProduct, :codeProvider, :description, :details, :category, :subcategory, :image, :price1, :price2, :price3, :cost, :isActive, :isExcent, :isInventary, :inventary, :unitSize, :expiredDate, :created_at, :updated_at

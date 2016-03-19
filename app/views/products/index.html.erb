@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codeproduct</th>
+      <th>Codeprovider</th>
+      <th>Description</th>
+      <th>Details</th>
+      <th>Category</th>
+      <th>Subcategory</th>
+      <th>Image</th>
+      <th>Price1</th>
+      <th>Price2</th>
+      <th>Price3</th>
+      <th>Cost</th>
+      <th>Isactive</th>
+      <th>Isexcent</th>
+      <th>Isinventary</th>
+      <th>Inventary</th>
+      <th>Unitsize</th>
+      <th>Expireddate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.codeProduct %></td>
+        <td><%= product.codeProvider %></td>
+        <td><%= product.description %></td>
+        <td><%= product.details %></td>
+        <td><%= product.category %></td>
+        <td><%= product.subcategory %></td>
+        <td><%= product.image %></td>
+        <td><%= product.price1 %></td>
+        <td><%= product.price2 %></td>
+        <td><%= product.price3 %></td>
+        <td><%= product.cost %></td>
+        <td><%= product.isActive %></td>
+        <td><%= product.isExcent %></td>
+        <td><%= product.isInventary %></td>
+        <td><%= product.inventary %></td>
+        <td><%= product.unitSize %></td>
+        <td><%= product.expiredDate %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>
